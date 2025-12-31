@@ -1,5 +1,5 @@
 from models.forecast_engine import generate_forecast
-
+app = FastAPI()
 if __name__ == "__main__":
     symbol = "BEL.NS"       # Replace with your ticker
     days = 14               # Forecast horizon
