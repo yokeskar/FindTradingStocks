@@ -9,7 +9,12 @@ NIFTY50_TICKERS = [
     "KOTAKBANK.NS","SBIN.NS","ITC.NS","LT.NS","AXISBANK.NS",
     "BAJFINANCE.NS","BHARTIARTL.NS","ASIANPAINT.NS","ULTRACEMCO.NS",
     "ONGC.NS","NTPC.NS","POWERGRID.NS","TITAN.NS","MARUTI.NS",
-    "SUNPHARMA.NS","HINDUNILVR.NS","WIPRO.NS","TECHM.NS","ADANIENT.NS"
+    "SUNPHARMA.NS","HINDUNILVR.NS","WIPRO.NS","TECHM.NS","ADANIENT.NS",
+    "M&M.NS","HCLTECH.NS","DIVISLAB.NS","BRITANNIA.NS","COALINDIA.NS",
+    "INDUSINDBK.NS","BPCL.NS","GRASIM.NS","HEROMOTOCO.NS","JSWSTEEL.NS",
+    "SBILIFE.NS","SHREECEM.NS","CIPLA.NS","TATASTEEL.NS","BAJAJ-AUTO.NS",
+    "ADANIPORTS.NS","HINDALCO.NS","UPL.NS","EICHERMOT.NS","TATAELXSI.NS",
+    "HAL.NS","BEL.NS","BDL.NS","COFORGE.NS","KFINTECH.NS","MAZDOCK.NS"
 ]
 
 HORIZON_DAYS = 2
@@ -36,7 +41,7 @@ def run_scan_internal():
                 "down_prob": res["probs"]["downside_prob"],
                 "atm_iv": res["atm_iv_percent"],
                 "expected_move_1s": res["expected_move_1s"],
-                "confidence": res.get("bias_confidence", 0.0),
+                "confidence": res.get("confidence", 0.0),
                 "candle": res.get("candle"),
                 "bias": res["bias"]
             }
